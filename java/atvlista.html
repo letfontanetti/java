@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lista = [1,5,18,20,44,55,64,15,9,50]
+        var multiplo = []
+
+        for(var indice = 0; indice < lista.length; indice++){
+            var multiplospor5 = lista[indice] % 5
+
+            if(multiplospor5 == 0){
+                multiplo.push(lista[indice])
+            }
+        }
+
+        console.log(lista)
+        console.log(multiplo)
+    </script>
+</body>
+</html>
