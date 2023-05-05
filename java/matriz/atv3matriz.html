@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matriz1 = [
+            [12,25,2,21],
+            [2,34,13,11],
+        ]
+
+        var matriz2 = [
+            [12,25,2,21],
+            [2,34,13,11],
+        ]
+
+        sn = true
+
+        for(var linha = 0; linha < matriz1.length; linha++) {
+            for(var coluna = 0; coluna < matriz1[linha].length; coluna++) {
+                if (matriz1[linha][coluna] != matriz2[linha][coluna]){
+                    sn = false
+                }
+            }
+        }     
+
+        console.log(sn)
+    </script>
+</body>
+</html>
